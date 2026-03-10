@@ -230,16 +230,37 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h3><i class="fas fa-home"></i> Madrid Housing MLOps</h3>
-                    <p>End-to-end Machine Learning pipeline to predict real estate prices in Madrid. Features automated data ingestion, model training, and deployment.</p>
+                    <h3><i class="fas fa-robot"></i> Financial Research Agent</h3>
+                    <p>RAG-powered AI agent that ingests SEC filings (Apple, NVIDIA, PepsiCo) and answers financial questions using retrieval-augmented generation with tool use.</p>
                     <div class="tech-stack">
-                        <span class="badge">Python</span>
-                        <span class="badge">Scikit-Learn</span>
-                        <span class="badge">MLOps</span>
+                        <span class="badge">Google Gemini</span>
+                        <span class="badge">LangGraph</span>
+                        <span class="badge">RAG</span>
+                        <span class="badge">ChromaDB</span>
+                        <span class="badge">Streamlit</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="https://github.com/maquiavelo01/MLOPS-Madrid-house-prices.git" class="project-link" target="_blank">
+                    <a href="https://github.com/maquiavelo01/financial-research-agent" class="project-link" target="_blank">
+                        View Code <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h3><i class="fas fa-home"></i> Madrid Housing MLOps</h3>
+                    <p>End-to-end MLOps pipeline for Madrid house price prediction with MLflow tracking, FastAPI serving, Docker containerization, and CI/CD on Render.</p>
+                    <div class="tech-stack">
+                        <span class="badge">Scikit-Learn</span>
+                        <span class="badge">MLflow</span>
+                        <span class="badge">FastAPI</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">CI/CD</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/maquiavelo01/MLOPS-Madrid-house-prices" class="project-link" target="_blank">
                         View Code <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -248,16 +269,17 @@
             <div class="card">
                 <div class="card-body">
                     <h3><i class="fas fa-project-diagram"></i> Retail ETL Pipeline</h3>
-                    <p>Automated ETL process transforming 30 years of raw retail data into a clean SQL warehouse for Tableau visualization and trend analysis.</p>
+                    <p>Automated ETL process transforming 30 years of US retail data into a MySQL warehouse with trend analysis and visualization.</p>
                     <div class="tech-stack">
                         <span class="badge">Python</span>
                         <span class="badge">Pandas</span>
-                        <span class="badge">SQL</span>
-                        <span class="badge">Tableau</span>
+                        <span class="badge">MySQL</span>
+                        <span class="badge">SQLAlchemy</span>
+                        <span class="badge">Jupyter</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="https://github.com/maquiavelo01/ETLAnalysisVisualization.git" class="project-link" target="_blank">
+                    <a href="https://github.com/maquiavelo01/ETLAnalysisVisualization" class="project-link" target="_blank">
                         View Code <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -266,15 +288,17 @@
             <div class="card">
                 <div class="card-body">
                     <h3><i class="fas fa-sync"></i> Change Data Capture</h3>
-                    <p>Real-time data replication system ensuring consistency across distributed databases (MySQL to MongoDB) using CDC patterns.</p>
+                    <p>Multi-database replication pipeline with custom CDC pattern syncing MySQL to MongoDB via Docker-orchestrated containers.</p>
                     <div class="tech-stack">
-                        <span class="badge">Data Eng</span>
-                        <span class="badge">Distributed Systems</span>
                         <span class="badge">Python</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">MySQL</span>
+                        <span class="badge">MongoDB</span>
+                        <span class="badge">CDC</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="https://github.com/maquiavelo01/ChangeDataCapture.git" class="project-link" target="_blank">
+                    <a href="https://github.com/maquiavelo01/ChangeDataCapture" class="project-link" target="_blank">
                         View Code <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -283,15 +307,16 @@
             <div class="card">
                 <div class="card-body">
                     <h3><i class="fab fa-docker"></i> DB Containerization</h3>
-                    <p>Infrastructure-as-Code (IaC) project deploying Dockerized databases with Python automation for scalable development environments.</p>
+                    <p>Dockerized MongoDB deployment with Python automation scripts for full CRUD data lifecycle management.</p>
                     <div class="tech-stack">
                         <span class="badge">Docker</span>
                         <span class="badge">MongoDB</span>
-                        <span class="badge">DevOps</span>
+                        <span class="badge">PyMongo</span>
+                        <span class="badge">IaC</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="https://github.com/maquiavelo01/DatabaseContainerization.git" class="project-link" target="_blank">
+                    <a href="https://github.com/maquiavelo01/DatabaseContainerization" class="project-link" target="_blank">
                         View Code <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -300,15 +325,17 @@
             <div class="card">
                 <div class="card-body">
                     <h3><i class="fas fa-bus"></i> Real-Time Transit Data</h3>
-                    <p>IoT-style ingestion pipeline fetching live MBTA bus telemetry via API, persisting to SQL, and serving via a Flask REST endpoint.</p>
+                    <p>Real-time MBTA transit data pipeline with live API ingestion, MySQL persistence, and Flask REST endpoint for downstream visualization.</p>
                     <div class="tech-stack">
-                        <span class="badge">API Integration</span>
+                        <span class="badge">Python</span>
                         <span class="badge">Flask</span>
-                        <span class="badge">Real-Time</span>
+                        <span class="badge">MySQL</span>
+                        <span class="badge">REST API</span>
+                        <span class="badge">MBTA API</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="https://github.com/maquiavelo01/TransitData.git" class="project-link" target="_blank">
+                    <a href="https://github.com/maquiavelo01/TransitData" class="project-link" target="_blank">
                         View Code <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -318,7 +345,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 José Antonio Morfín Guerrero</p>
+        <p>&copy; 2026 José Antonio Morfín Guerrero</p>
         <p style="opacity: 0.6; margin-top: 10px;">MBA & Master in Business Analytics @ IE Business School</p>
     </footer>
 
