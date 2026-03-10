@@ -191,6 +191,41 @@
             color: var(--accent);
         }
 
+        .bio {
+            max-width: 600px;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+
+        .scroll-hint {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .scroll-hint:hover {
+            color: var(--text-main);
+        }
+
+        .scroll-hint i {
+            font-size: 1.4rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(8px); }
+            60% { transform: translateY(4px); }
+        }
+
         /* --- FOOTER --- */
         footer {
             text-align: center;
@@ -200,10 +235,25 @@
             border-top: 1px solid rgba(255,255,255,0.05);
         }
 
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--accent-hover);
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
+            .bio { font-size: 0.95rem; padding: 0 1rem; }
             .grid { grid-template-columns: 1fr; }
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -212,18 +262,26 @@
     <header>
         <h1>José Antonio Morfín</h1>
         <div class="subtitle">Product and Digital Transformation Leader</div>
-        
+        <p class="bio">Building data-driven solutions at the intersection of business strategy and engineering. Focused on ML pipelines, AI agents, and scalable data architectures.</p>
+
         <div class="cta-container">
             <a href="https://joseantoniomorfin.name/" class="btn btn-primary">
                 <i class="fas fa-user-circle"></i> Visit My Full Website
+            </a>
+            <a href="https://github.com/maquiavelo01" class="btn btn-outline" target="_blank">
+                <i class="fab fa-github"></i> GitHub
             </a>
             <a href="https://linkedin.com/in/joseantoniomorfinguerrero" class="btn btn-outline" target="_blank">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
         </div>
+
+        <a href="#projects" class="scroll-hint">
+            View Projects <i class="fas fa-chevron-down"></i>
+        </a>
     </header>
 
-    <div class="container">
+    <div class="container" id="projects">
         <h2 class="section-title">Technical Projects</h2>
         
         <div class="grid">
@@ -347,6 +405,9 @@
     <footer>
         <p>&copy; 2026 José Antonio Morfín Guerrero</p>
         <p style="opacity: 0.6; margin-top: 10px;">MBA & Master in Business Analytics @ IE Business School</p>
+        <p style="margin-top: 1rem;">
+            <a href="mailto:joseantoniomorfin@alumni.ie.edu"><i class="fas fa-envelope"></i> joseantoniomorfin@alumni.ie.edu</a>
+        </p>
     </footer>
 
 </body>
